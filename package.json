@@ -10,7 +10,7 @@
     "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback",
     "seed": "knex seed:run",
-    "setup": "npm run db:migrate && npm run db:seed"
+    "setup": "npm run migrate && npm run seed"
   },
   "keywords": [],
   "author": "Aleksander Sokolov",
