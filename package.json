@@ -8,7 +8,9 @@
     "dev": "tsx watch src/app.ts",
     "start": "tsx src/app.ts",
     "migrate": "knex migrate:latest",
-    "rollback": "knex migrate:rollback"
+    "rollback": "knex migrate:rollback",
+    "seed": "knex seed:run",
+    "setup": "npm run db:migrate && npm run db:seed"
   },
   "keywords": [],
   "author": "Aleksander Sokolov",
